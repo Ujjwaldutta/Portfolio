@@ -264,6 +264,19 @@
   .stage-list li{list-style:none;padding-left:20px;position:relative;color:#C7D3DC;font-size:14px;}
   .stage-list li::before{content:"›";position:absolute;left:0;color:var(--cyan);font-family:var(--font-mono);}
 
+  /* ---------- INTERNSHIPS ---------- */
+  .intern-grid{display:grid;grid-template-columns:1fr;gap:16px;}
+  @media(min-width:720px){.intern-grid{grid-template-columns:1fr 1fr;}}
+  .intern-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 22px;
+    position:relative;
+  }
+  .intern-card .stage-status{background:transparent;}
+  .intern-card .stage-role{font-size:17px;}
+  .intern-card .stage-org{margin-top:3px;}
+  .intern-card .stage-time{display:block;margin-top:10px;}
+  .intern-card .chip-row{margin-top:14px;}
+
   /* ---------- SKILLS ---------- */
   .skill-groups{display:grid;grid-template-columns:1fr;gap:16px;}
   @media(min-width:720px){.skill-groups{grid-template-columns:1fr 1fr;}}
@@ -338,8 +351,9 @@
   <div class="wrap">
     <div class="brand"><span class="dot"></span>ujjwal.dutta</div>
     <div class="navlinks">
-      <a href="#experience">experience</a>
       <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#internships">internships</a>
       <a href="#projects">projects</a>
       <a href="#certs">certifications</a>
       <a href="#contact">contact</a>
@@ -361,13 +375,13 @@
       </div>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:ujjwaldutta99999@gmail.com">Get in touch</a>
-        <a class="btn btn-ghost" href="#experience">View experience ↓</a>
+        <a class="btn btn-ghost" href="#skills">View skills ↓</a>
       </div>
     </div>
 
     <div class="res-card">
       <div class="res-card-head">
-        <span>rg-ujjwal-portfolio / CentralIndia</span>
+        <span>rg-ujjwal-portfolio / eastus</span>
         <span class="status">running</span>
       </div>
       <div class="photo-frame">
@@ -376,7 +390,7 @@
         <div class="corner br"></div>
       </div>
       <div class="res-card-foot">
-        <span>type: Cloud Engineer</span>
+        <span>type: cloud engineer</span>
         <span>uptime: 99.9%</span>
       </div>
     </div>
@@ -406,6 +420,57 @@
       <div class="metric"><div class="num">99.9%</div><div class="lbl">application uptime maintained</div></div>
       <div class="metric"><div class="num">90%</div><div class="lbl">faster incident detection</div></div>
       <div class="metric"><div class="num">60%</div><div class="lbl">lower monthly compute cost</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">resource providers</div>
+      <h2>Skills</h2>
+      <p>Tools I use across the full lifecycle — provisioning, securing, monitoring, and maintaining.</p>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-panel">
+        <h3>Cloud Platforms</h3>
+        <div class="chip-row">
+          <span class="chip">Azure VMs</span><span class="chip">VNets</span><span class="chip">NSGs</span><span class="chip">Storage Account</span>
+          <span class="chip">Load Balancer</span><span class="chip">Application Gateway</span><span class="chip">Key Vault</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>Infrastructure as Code</h3>
+        <div class="chip-row">
+          <span class="chip">Terraform</span><span class="chip">ARM Templates</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>CI/CD &amp; DevOps</h3>
+        <div class="chip-row">
+          <span class="chip">Azure DevOps Pipelines</span><span class="chip">YAML</span><span class="chip">JSON</span><span class="chip">Git</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>Scripting &amp; Automation</h3>
+        <div class="chip-row">
+          <span class="chip">PowerShell</span><span class="chip">Bash</span><span class="chip">Azure CLI</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>Monitoring &amp; Observability</h3>
+        <div class="chip-row">
+          <span class="chip">Azure Monitor</span><span class="chip">Log Analytics</span>
+          <span class="chip">Application Insights</span><span class="chip">Splunk</span>
+        </div>
+      </div>
+      <div class="skill-panel">
+        <h3>ITSM &amp; OS</h3>
+        <div class="chip-row">
+          <span class="chip">ServiceNow</span><span class="chip">ITIL Change Mgmt</span>
+          <span class="chip">ManageEngine</span><span class="chip">Linux</span><span class="chip">Windows Server</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -446,50 +511,30 @@
   </div>
 </section>
 
-<section id="skills">
+<section id="internships">
   <div class="wrap">
     <div class="sec-head">
-      <div class="tag">resource providers</div>
-      <h2>Skills</h2>
+      <div class="tag">earlier releases</div>
+      <h2>Internships</h2>
+      <p>Two staging runs before production — where the fundamentals got tested.</p>
     </div>
-    <div class="skill-groups">
-      <div class="skill-panel">
-        <h3>Cloud Platforms</h3>
+    <div class="intern-grid">
+      <div class="intern-card">
+        <div class="stage-role">Web Development Intern</div>
+        <div class="stage-org">Kunal i Technology</div>
+        <span class="stage-time">Aug 2021 — Dec 2021</span>
+        <span class="stage-status">✓ build passing</span>
         <div class="chip-row">
-          <span class="chip">Azure VMs</span><span class="chip">VNets</span><span class="chip">NSGs</span>
-          <span class="chip">Load Balancer</span><span class="chip">Application Gateway</span><span class="chip">Key Vault</span>
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Bootstrap</span><span class="chip">JavaScript</span><span class="chip">Animations</span>
         </div>
       </div>
-      <div class="skill-panel">
-        <h3>Infrastructure as Code</h3>
+      <div class="intern-card">
+        <div class="stage-role">Azure Intern</div>
+        <div class="stage-org">I.F.I Techsolutions</div>
+        <span class="stage-time">Jun 2020 — Jul 2020</span>
+        <span class="stage-status">✓ build passing</span>
         <div class="chip-row">
-          <span class="chip">Terraform</span><span class="chip">ARM Templates</span>
-        </div>
-      </div>
-      <div class="skill-panel">
-        <h3>CI/CD &amp; DevOps</h3>
-        <div class="chip-row">
-          <span class="chip">Azure DevOps Pipelines</span><span class="chip">YAML</span><span class="chip">Git</span>
-        </div>
-      </div>
-      <div class="skill-panel">
-        <h3>Scripting &amp; Automation</h3>
-        <div class="chip-row">
-          <span class="chip">PowerShell</span><span class="chip">Bash</span>
-        </div>
-      </div>
-      <div class="skill-panel">
-        <h3>Monitoring &amp; Observability</h3>
-        <div class="chip-row">
-          <span class="chip">Azure Monitor</span><span class="chip">Log Analytics</span>
-          <span class="chip">Application Insights</span><span class="chip">Splunk</span>
-        </div>
-      </div>
-      <div class="skill-panel">
-        <h3>ITSM &amp; OS</h3>
-        <div class="chip-row">
-          <span class="chip">ServiceNow</span><span class="chip">ITIL Change Mgmt</span>
-          <span class="chip">ManageEngine</span><span class="chip">Linux</span><span class="chip">Windows Server</span>
+          <span class="chip">Cloud Computing</span><span class="chip">Azure Fundamentals</span><span class="chip">Azure Administrator</span>
         </div>
       </div>
     </div>
@@ -501,6 +546,7 @@
     <div class="sec-head">
       <div class="tag">recent commits</div>
       <h2>Projects</h2>
+      <p>The work behind the metrics above — automated, monitored, and still running.</p>
     </div>
     <div class="projects">
       <div class="proj-card">
@@ -522,12 +568,13 @@
     <div class="sec-head">
       <div class="tag">verified credentials</div>
       <h2>Certifications</h2>
+      <p>Formal proof for the skills already in use across production.</p>
     </div>
     <div class="cert-row">
-      <div class="cert"><div class="code">AZ-900</div><div class="name">Azure Fundamentals</div></div>
-      <div class="cert"><div class="code">DP-900</div><div class="name">Data Fundamentals</div></div>
-      <div class="cert"><div class="code">AZ-104</div><div class="name">Azure Administrator</div></div>
-      <div class="cert"><div class="code">AZ-400</div><div class="name">DevOps Engineer Expert</div></div>
+      <div class="cert" ><a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/UjjwalDutta-1266/BA8C3E1A70E8BC67?sharingId=B0BFB4583F372D11"><div class="code">AZ-900</div><div class="name">Azure Fundamentals</div></a></div>
+      <div class="cert"><a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/UjjwalDutta-1266/F0BAA3455BEAB612?sharingId=B0BFB4583F372D11"><div class="code">DP-900</div><div class="name">Data Fundamentals</div></a></div>
+      <div class="cert"><a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/UjjwalDutta-1266/539C3E345AA236CE?sharingId=B0BFB4583F372D11"><div class="code">AZ-104</div><div class="name">Azure Administrator</div></a></div>
+      <div class="cert"><a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/UjjwalDutta-1266/58CB51DCCDE9EF4F?sharingId=B0BFB4583F372D11"><div class="code">AZ-400</div><div class="name">DevOps Engineer Expert</div></a></div>
     </div>
   </div>
 </section>
@@ -537,6 +584,7 @@
     <div class="sec-head">
       <div class="tag">build history</div>
       <h2>Education</h2>
+      <p>The foundation everything above was built on.</p>
     </div>
     <div class="edu">
       <div class="edu-card">
@@ -552,6 +600,13 @@
           <div class="deg">Diploma in Computer Science &amp; Engineering</div>
         </div>
         <div class="when">Aug 2019 — May 2022<div class="cgpa">83.5%</div></div>
+      </div>
+      <div class="edu-card">
+        <div>
+          <div class="school">B.S.S.P.C.W, Jamshedpur</div>
+          <div class="deg">Secondary School</div>
+        </div>
+        <div class="when">June 2019<div class="cgpa">88.2%</div></div>
       </div>
     </div>
   </div>
